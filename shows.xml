@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shows>
+    <show id="1">
+        <title>Лебединое озеро</title>
+        <genre>Балет</genre>
+        <description>Знаменитый балет Петра Чайковского в исполнении звёзд мировой сцены...</description>
+        <duration>145</duration>
+        <image>img/ЛебединоеОзеро.png</image>
+    </show>
+    <show id="2">
+        <title>Гамлет</title>
+        <genre>Драма</genre>
+        <description>Шекспировская трагедия в современной постановке. Режиссёрский взгляд на вечную...</description>
+        <duration>180</duration>
+        <image>img/Гамлет.png</image>
+    </show>
+    <show id="3">
+        <title>Симфония №9 Бетховена</title>
+        <genre>Концерт</genre>
+        <description>Грандиозное симфоническое полотно в исполнении Большого симфонического...</description>
+        <duration>90</duration>
+        <image>img/Симфония9Бетховина.png</image>
+    </show>
+</shows>

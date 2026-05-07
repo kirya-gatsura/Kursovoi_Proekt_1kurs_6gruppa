@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Выбор мест - Драматический театр">
+    <title>Выбор мест - Драматический театр</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo" aria-label="На главную">
+                <svg class="logo-icon" width="60" height="60" viewBox="0 0 60 60">
+                    <circle cx="30" cy="30" r="28" stroke="white" stroke-width="3" fill="none"/>
+                    <path d="M 29 60 L 30 1 z" stroke="white" stroke-width="3"/>
+                    <circle cx="20" cy="20" r="2" stroke="white" stroke-width="3"/>
+                    <circle cx="40" cy="20" r="2" stroke="white" stroke-width="3"/>
+                    <path d="M 15 45 L 20 40 L 40 40 L 45 35" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
+                </svg>
+                <span class="logo-text">Драматический театр</span>
+            </a>
+            
+            <input type="checkbox" class="burger-checkbox" id="burger">
+
+            <label class="burger-label" for="burger">
+                <span class="burger-icon">&#8801;</span>
+            </label>
+
+            <ul class="burger-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Главная</a></li>
+                <li><a href="shows.html" class="nav-link">Афиша</a></li>
+                <li>
+                    <a href="checkout.html" class="nav-link cart-link">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </a>
+                </li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="page-header section" aria-labelledby="page-title">
+            <div class="container">
+                <h1 id="page-title" class="page-title">Рассадка в зале</h1>
+                <div id="page-subtitle" class="page-subtitle">Выберите места</в>
+            </div>
+        </section>
+
+        <section class="seat-selection section">
+            <div class="container">
+                <div class="seat-layout-wrapper">
+                    <div class="seat-layout" role="img" aria-label="Схема зала">
+                        <div class="stage" aria-hidden="true">
+                            <span>СЦЕНА</span>
+                        </div>
+                        
+                        <div class="legend" role="list" aria-label="Легенда мест">
+                            <div class="legend-item" role="listitem">
+                                <span class="legend-color vip" aria-hidden="true"></span>
+                                <span>VIP (50 Byn)</span>
+                            </div>
+                            <div class="legend-item" role="listitem">
+                                <span class="legend-color standard" aria-hidden="true"></span>
+                                <span>Стандарт (30 Byn)</span>
+                            </div>
+                            <div class="legend-item" role="listitem">
+                                <span class="legend-color balcony" aria-hidden="true"></span>
+                                <span>Балкон (15 Byn)</span>
+                            </div>
+                            <div class="legend-item" role="listitem">
+                                <span class="legend-color occupied" aria-hidden="true"></span>
+                                <span>Занято</span>
+                            </div>
+                            <div class="legend-item" role="listitem">
+                                <span class="legend-color selected" aria-hidden="true"></span>
+                                <span>Выбрано</span>
+                            </div>
+                        </div>
+                        <div class="seats-grid" id="seatsGrid">
+                            <!--места генерируются через JavaScript-->
+                        </div>
+                    </div>
+                    
+                    <aside class="order-summary">
+                        <h2 id="order-title" class="order-title">Ваш заказ</h2>
+                        
+                        <div class="order-info">
+                            <div class="order-item">
+                                <span class="order-label">Спектакль:</span>
+                                <span class="order-value" id="showName">-</span>
+                            </div>
+                            <div class="order-item">
+                                <span class="order-label">Дата и время:</span>
+                                <span class="order-value" id="showDate">-</span>
+                            </div>
+                        </div>
+                        
+                        <div class="selected-seats" id="selectedSeats">
+                            <h3 class="selected-seats-title">Выбрано мест: <span id="seatsCount">0</span></h3>
+                            <ul class="seats-list" id="seatsList">
+                                <!--выбранные места-->
+                            </ul>
+                        </div>
+                        
+                        <div class="order-total">
+                            <span class="total-label">Итого:</span>
+                            <span class="total-price" id="totalPrice">0 Byn</span>
+                        </div>
+                        
+                        <button class="btn btn-primary btn-block" id="addToCartBtn" disabled>
+                            Добавить в корзину
+                        </button>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Драматический театр. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/seats.js"></script>
+</body>
+</html>

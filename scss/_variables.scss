@@ -1,0 +1,81 @@
+// ЦВЕТОВЫЕ ПЕРЕМЕННЫЕ =========================
+// Основные цвета
+$color-primary: #ff9800;
+$color-primary-dark: #f57c00;
+$color-secondary: #212121;
+$color-secondary-dark: #1a1a1a;
+$color-secondary-light: #343333;
+$color-background: #f9f9f9;
+$color-surface: #ffffff;
+
+// Текст
+$color-text: #333333;
+$color-text-light: #757575;
+$color-text-lighter: #797979;
+$color-text-inverse: #ffffff;
+
+// Границы и разделители
+$color-border: #e0e0e0;
+$color-border-light: rgba(255, 255, 255, 0.1);
+
+// Состояния
+$color-error: #f44336;
+$color-success: #4caf50;
+
+// Категории мест
+$color-vip: #9c27b0;
+$color-standard: #2196f3;
+$color-balcony: #4caf50;
+$color-occupied: #e0e0e0;
+
+// Тени
+$shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.1);
+$shadow-md: 0 5px 15px rgba(0, 0, 0, 0.15);
+$shadow-lg: 0 5px 20px rgba(0, 0, 0, 0.15);
+$shadow-header: 0 7px 7px rgba(255, 106, 0, 0.558);
+
+// ШРИФТЫ =========================
+$font-family: Arial, Helvetica, sans-serif;
+$font-size-base: 16px;
+$font-size-sm: 14px;
+$font-size-lg: 18px;
+$font-size-xl: 24px;
+$font-size-xxl: 32px;
+$font-size-xxxl: 48px;
+
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+$line-height-base: 1.6;
+$line-height-tight: 1.2;
+$line-height-loose: 1.8;
+
+// ОТСТУПЫ =========================
+$spacing-xs: 5px;
+$spacing-sm: 8px;
+$spacing-md: 10px;
+$spacing-lg: 12px;
+$spacing-xl: 15px;
+$spacing-xxl: 20px;
+$spacing-xxxl: 30px;
+$spacing-section: 60px;
+
+// РАЗМЕРЫ И МАКЕТ =========================
+$max-width: 1200px;
+$header-height: 70px;
+
+$border-radius-sm: 4px;
+$border-radius: 8px;
+$border-radius-lg: 12px;
+$border-radius-round: 50%;
+
+// РАЗМЕРЫ УСТРОЙСТВ =========================
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+// ПЕРЕМЕННЫЕ ДЛЯ МЕСТ =========================
+$seat-size: 35px;
+$seat-gap: 10px;
+$seats-per-row: 20;
